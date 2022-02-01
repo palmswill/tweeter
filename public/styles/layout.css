@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
+/*  font-family: 'Bungee', cursive; twitter logo in nav*/
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+
+
+
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -15,6 +23,10 @@ html {
  */
 
 body {
+  --primary-text-color:#545149;
+  --primary-color:#4056A1;
+  --primary-font:'Source Sans Pro', sans-serif;
+  --theme-font:'Bungee', cursive; 
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -23,3 +35,7 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ main{
+   width:90%;
+   margin:auto;
+ }
