@@ -1,3 +1,7 @@
+.new-tweet{
+  margin-top:5vh;
+}
+
 .new-tweet form{
   width:90%;
   margin:auto;
@@ -25,6 +29,7 @@
   display:flex;
   justify-content:space-between;
   font-family: var(--theme-font);
+  align-items: center;
 
 }
 
@@ -36,3 +41,8 @@
   padding: 5px 10px;
 }
 
+.error {
+  font-size:1rem;
+  padding:10px;
+  color:red;
+}

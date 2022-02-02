@@ -1,4 +1,4 @@
-section#tweet-container{
+section.tweet-container{
   margin:4vh 0;
   display:flex;
   flex-wrap:wrap;
@@ -33,6 +33,7 @@ article.tweet .user-profile{
 
 article.tweet header img{
   width:50px;
+
   
 }
 
