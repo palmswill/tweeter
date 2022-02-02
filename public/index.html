@@ -10,8 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       type="text/css"
     />
-  erpolicy="no-referrer"
-    ></script>
+
     <!--font-awesome  -->
     <link
       rel="stylesheet"
@@ -25,23 +24,30 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span class="logo">tweeter</span>
+      <div>
+        <p><span>Write</span> a new tweet</p>
+        <i class="fas fa-angle-double-down"></i>
+      </div>
     </nav>
     <!-- header -->
-    <header>
+    <header class="main">
       <div>
         <img src="/images/profile-hex.png" />
       </div>
@@ -67,6 +73,46 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <section id="tweet-container">
+        <article class="tweet">
+          <header>
+            <div class="user-profile">
+              <img src="/images/profile-hex.png" /><span>Newton</span>
+            </div>
+            <div class="tweet-id">@SirIssac</div>
+          </header>
+          <div class="content">
+            If I have seen further it is by standing on the shoulders of gaints
+          </div>
+          <footer>
+            <div class="time">10 days ago</div>
+            <div class="button-list">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header>
+            <div class="user-profile">
+              <img src="/images/profile-hex.png" /><span>Newton</span>
+            </div>
+            <div class="tweet-id">@SirIssac</div>
+          </header>
+          <div class="content">
+            If I have seen further it is by standing on the shoulders of gaints
+          </div>
+          <footer>
+            <div class="time">10 days ago</div>
+            <div class="button-list">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
       </section>
     </main>
   </body>

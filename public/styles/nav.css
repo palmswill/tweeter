@@ -1,15 +1,35 @@
 nav{
   height:120px;
   width:100vw;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
   background-color:#4056A1;
   color:#FFFFFF;
-  padding: 0px 1.5em;
+  padding: 20px 1.5em;
   z-index:50;
   position: fixed;
   top:0;
+
   
+}
+
+nav span.logo {
+  font-size: 2.5rem;
+  display: inline-block;
 }
 
 nav span{
   font-family: 'Bungee', cursive;
+}
+
+nav div{
+  text-align:center;
+}
+nav div i {
+  color:red;
+}
+
+nav div p {
+  margin:0;
 }
