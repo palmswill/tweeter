@@ -6,7 +6,8 @@
 
 const renderTweets = function (tweets) {
   // loops through tweets
-  for (const tweet of tweets) {
+  let sortedTweets = tweets.sort((a, b) => b.created_at - a.created_at);
+  for (const tweet of sortedTweets) {
     // calls createTweetElement for each tweet
     const tweetElement = createTweetElement(tweet);
     // takes return value and appends it to the tweets container
@@ -53,9 +54,8 @@ $(() => {
   // form posting for new tweet submission
   $(".new-tweet form").submit(function (event) {
     event.preventDefault();
-    // to get the actual length of the form data of "text";
-    const formData = new FormData(event.target);
-    const dataLength = formData.get("text").length;
+  
+    const dataLength = $("#tweet-text").val().length;
     // get serialized data
     const data = $(this).serialize();
     $(".error").empty();
@@ -67,6 +67,7 @@ $(() => {
       $.post("/tweets", data)
         .then((res) => {
           $(".tweet-container").empty();
+          $("#tweet-text").val('');
           $.get("/tweets").then((result) => {
             renderTweets(result);
           });
