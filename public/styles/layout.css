@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap");
 
 /*  font-family: 'Bungee', cursive; twitter logo in nav*/
 /* font-family: 'Source Sans Pro', sans-serif; */
-
-
-
 
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
@@ -14,23 +11,25 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 /*
  * Global layout stuff
  */
 
 body {
-  --primary-text-color:#545149;
-  --primary-color:#4056A1;
-  --primary-font:'Source Sans Pro', sans-serif;
-  --theme-font:'Bungee', cursive; 
+  --primary-text-color: #545149;
+  --primary-color: #4056a1;
+  --primary-font: "Source Sans Pro", sans-serif;
+  --theme-font: "Bungee", cursive;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -39,11 +38,40 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- main{
-   width:90%;
-   margin:auto;
- }
+main {
+   width: 90%;
+  margin: auto; 
 
- .warning{
-   color:red;
- }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+body>header{
+  width:100%;
+
+}
+
+
+
+.warning {
+  color: red;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 15% 0;
+    flex-direction:row;
+  }
+
+  body>*{
+    margin:0 5%;
+  
+  }
+}
+
+
