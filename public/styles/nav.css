@@ -1,17 +1,15 @@
-nav{
-  height:120px;
-  width:100vw;
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  background-color:#4056A1;
-  color:#FFFFFF;
+nav {
+  height: 120px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #4056a1;
+  color: #ffffff;
   padding: 20px 1.5em;
-  z-index:50;
+  z-index: 50;
   position: fixed;
-  top:0;
-
-  
+  top: 0;
 }
 
 nav span.logo {
@@ -19,17 +17,29 @@ nav span.logo {
   display: inline-block;
 }
 
-nav span{
-  font-family: 'Bungee', cursive;
+nav span {
+  font-family: "Bungee", cursive;
 }
 
-nav div{
-  text-align:center;
+nav div {
+  text-align: center;
 }
 nav div i {
-  color:red;
+  color: red;
+  cursor: pointer;
+  animation: 1s linear 1s infinite alternate updown;
+  
 }
 
+@keyframes updown {
+  from {
+    transform: translateY(-15%);
+  }
+
+  to {
+    transform: translateY(50%);
+  }
+}
 nav div p {
-  margin:0;
+  margin: 0;
 }

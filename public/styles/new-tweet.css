@@ -1,36 +1,53 @@
-.new-tweet{
-  margin-top:5vh;
+.new-tweet {
+  margin-top: 5vh;
+  opacity: 0;
+  max-height: 0px;
+}
+.active {
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 2s ease-in,opacity 1s 1s;
 }
 
-.new-tweet form{
-  width:90%;
-  margin:auto;
-  padding:3rem 0;
+@keyframes SlideInAnimation {
+  0% {
+    opacity: 0;
+    translate: transformY(-100%);
+  }
+  100% {
+    opacity: 1;
+    translate: transformY(0%);
+  }
 }
 
-.new-tweet textarea{
+.new-tweet form {
+  width: 90%;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+.new-tweet textarea {
   border: none;
   overflow: auto;
   outline: none;
   background-color: inherit;
   box-shadow: none;
   border-bottom: 3px solid var(--primary-text-color);
-  height:fit-content;
-  resize: none; 
-  padding:0;
-  width:100%;
+  height: fit-content;
+  resize: none;
+  padding: 0;
+  width: 100%;
 }
 
-.new-tweet textarea::placeholder{
-  color:var(--primary-text-color);
-  font-size:2rem;
+.new-tweet textarea::placeholder {
+  color: var(--primary-text-color);
+  font-size: 2rem;
 }
-.new-tweet div{
-  display:flex;
-  justify-content:space-between;
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
   font-family: var(--theme-font);
   align-items: center;
-
 }
 
 .new-tweet button {
@@ -42,16 +59,14 @@
 }
 
 .error {
-  font-size:1rem;
-  padding:10px;
-  color:red;
+  font-size: 1rem;
+  padding: 10px;
+  color: red;
 }
 
-
-
 @media screen and (min-width: 1024px) {
-  .new-tweet textarea::placeholder{
-    color:var(--primary-text-color);
-    font-size:1.5rem;
+  .new-tweet textarea::placeholder {
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
   }
 }

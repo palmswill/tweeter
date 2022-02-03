@@ -75,4 +75,11 @@ $(() => {
         .catch((err) => console.log(err));
     }
   });
+
+
+
+  $(".toggle-compose").click(()=>{
+    $(".new-tweet").addClass("active")
+
+  })
 });
